@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.joinPage{
+    background-color: #060C20;
+    width: 100vw;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joinContainer{
+    
+    /* background: #101529; */
+    border-radius: 20px;
+    height: 55%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.joinContainer > h1{
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.joinContainer>input{
+    background-color: #101b39;
+    border: none;
+    width: 50%;
+    height: 8vh;
+    border-radius: 10px;
+    padding-left: 2%;
+    color: white;
+}
+.Joinbutton{
+    background-color: #ff3b52;
+    border: none;
+    color: #fff;
+    margin-top: 13%;
+    width: 100px;
+    height: 6vh;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.joinContainer>input:focus{
+    outline: none;
+}
+.joinContainer>input::placeholder{
+    color: #8d9994;
+    font-family: 'Montserrat', sans-serif;
+
+    
+}
+#logo{
+    width: 130px;
+    height: 130px;
+}
+@media only screen and (max-width: 700px){
+.joinContainer{
+    width: 100%;
+}
+    .joinContainer>input{
+       width: 90%;
+       font-size: 1rem;
+
+    }  
+
+    .Joinbutton{
+        width: 150px;
+        height: 8vh;
+
+    }
+}
+
+
+

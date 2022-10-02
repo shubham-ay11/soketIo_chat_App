@@ -1,0 +1,108 @@
+.chatPage{
+    background-color: #060C20;
+    width: 100vw;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.chatContainer{
+  background: #101529; 
+ /* border-radius: 20px; */
+ height: 60%;
+ width: 50%;
+ display: flex;
+ flex-direction: column;
+}
+
+.header{
+    background-color: #090c17;
+    height: 18%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+.chatBox{
+
+    height: 70%;
+    
+}
+.inputBox{
+  background-color: #060C20;
+     border: 0.2px solid #101529; 
+    border-top: 2px solid #090c17;
+    width: 98%;
+    height: 15%;
+    padding-left: 2%;
+    color: white;
+    display: flex;
+}
+#chatInput{
+    border: none;
+    background: #060C20; 
+    width: 90% !important;
+    border: none;
+    box-sizing: border-box;
+font-size: 1.1vmax;
+    padding-left: 2% !important;
+    color: white;
+
+}
+#chatInput::placeholder{
+    color: #8d9994;
+    font-family: 'Montserrat', sans-serif; 
+}
+#chatInput:focus{
+    outline: none;
+}
+.sendBtn{
+    background-color: #ff3b52;
+    border: none;
+    color: #fff;
+    margin-right: 0.5%;
+    width: 11%;
+   border-radius: 7%;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#sendBtnLogo{
+    transition: all 0.3s;
+    margin-top: 10%;
+} 
+.sendBtn:hover > #sendBtnLogo{
+    transform:  translateX(10px);
+}
+.logoHeader{
+    width: 65px;
+    height:65px;
+    margin-left: 3%;
+}
+
+
+@media only screen and (max-width: 700px){
+    
+    .header{
+        width: 95%;
+        padding-right: 5%;
+        
+    }
+    .chatContainer{
+       width: 100%;
+       height: 100vh; 
+    }
+    .sendBtn{
+        width: 20%;
+    }
+    #chatInput{
+font-size: 1rem;
+    }
+    .logOut{
+        margin-right: 10% !important;
+    }
+}
